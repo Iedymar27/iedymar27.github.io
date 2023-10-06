@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: px;
+}
+
+.navegador_superior {
+    width: 100%;
+    height: 180px;
+    background-color: green;
+}
+
+.navegador_superior ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegador_superior li {
+    padding: 50px;
+
+}
+
+.navegador_superior a {
+    text-decoration: none;
+    text-justify: auto;
+    color: white;
+    letter-spacing: 5px;
+
+    box-shadow: 2px 2px 7px white;
+    padding: 3px;
+}
+
+.navegador_superior a:hover {
+    padding: 5px;
+    background-color: rgb(124, 196, 17);
+    transition: 0.5s;
+}
+
+/*.link-menu { 
+    top: 5px;
+    left: 120px;
+    width: 120px;
+    height: 2px;
+    border: 2px solid black;
+} */
+
+.botao {
+    background-color: greenyellow;
+    color: black;
+}
+
+.menu {
+    position: relative;
+    border: 2px solid rgb(235, 234, 234);
+    width: 100px;
+    height: 55px;
+    display: none;
+}
+
+.link-menu:hover .menu {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 20vw;
+    height: 1200px;
+    display: flex;
+    background-color: green;
+}
+
+.container .navegador_esquerdo ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .navegador_esquerdo ul li {
+    display: flex;
+    justify-content: center;
+}
+
+.container .navegador_esquerdo a {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 7;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 1200px;
+    align-items: center;
+    margin-top: -1500px;
+    margin-left: 250px;
+}
+
+.loading {
+    animation: rodar 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: green;
+    height: 100px;
+    width: 100px;
+    margin-left: 800px;
+    margin-top: 20px;
+}
+
+@keyframes rodar { /* keyframe rodar em 1 vez, em 1s de animação, infinitamente*/
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+    /* @media screen and (max-width:600px){
+        .navegador_esquerdo{
+            width: 100%;
+            height: 600px;
+            position: fixed;
+            top: 100px;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .conteudo {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+    } Não consegui fazer o menu responsivo, sempre bugava e não ficava certo/
