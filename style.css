@@ -1,0 +1,123 @@
+body {
+    background-color: #e10600;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.navbar {
+    background-color: rgb(8, 7, 7);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+
+    list-style-type: none;
+}
+
+.navbar a:hover{
+    background-color: red;
+    cursor: pointer;
+    padding: 15.5px;
+    transition: 0.5s;
+}
+
+.navbar a {
+    color: bisque;
+    text-decoration: none;
+}
+
+.menu_esquerdo {
+    width: 300px;
+    height: 500px;
+    background-color: black;
+}
+
+.menu_esquerdo ul {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-evenly
+
+}
+
+.menu_esquerdo a {
+    color: bisque;
+    text-decoration: none;
+}
+
+.menu_esquerdo a{
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 7;
+}
+
+.menu_esquerdo a:hover {
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.mld{
+    width: 250px;
+    height: 500px;
+    margin-top: -500px;
+    background-color: rgba(36, 10, 10, 0.735);
+    float: right;
+    
+}
+
+.mldc {
+    color:rgb(255, 254, 254);
+    padding: 15px;
+
+    line-height: -10px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    gap: 20px;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: -500px;
+    left: 0px;
+}
+
+.imagem {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rodape {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: rgb(4, 4, 4);
+}
+
+.textorodape {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.textorodape:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color:#e10600;
+}
